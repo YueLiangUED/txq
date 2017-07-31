@@ -54,6 +54,7 @@ section .tableBox table tr:nth-child(3) td{
     height: 5.7rem;
 }
 section .tableBox table tr:nth-child(3) td a{
+    box-sizing: border-box;
     display: inline-block;
     width: 11.35rem;
     height: 3.1rem;
@@ -61,7 +62,7 @@ section .tableBox table tr:nth-child(3) td a{
     border-radius: 0.5rem;
     line-height: 3.2rem;
     background-color: #18c7de;
-    box-shadow: 0 10px 0 0 #00b5cd;
+    box-shadow: 0 0.3rem 0 0 #00b5cd;
 }
 section .tableBox table tr:nth-child(3) td a:nth-child(1){
     margin-right: 6.15rem;
@@ -80,7 +81,11 @@ section .tabTitle ul li{
     line-height: 3.1rem;
     color: #666666;
     border: 1px solid #bbbbbb;
+    border-right: 0;
     background-color: #eeeeee;
+}
+section .tabTitle ul li:last-child{
+    border-right: 1px solid #bbbbbb;
 }
 section .tabTitle ul li.active{
     color: #ffffff;
